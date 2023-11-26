@@ -75,7 +75,7 @@ OPT-OUT is a list of symbols of language grammars to opt out before auto-install
       ;; prefer tree-sitter modes
       (global-treesit-auto-mode)
       ;; install all the tree-sitter grammars
-      (treesit-auto-install-all)
+      ;; (treesit-auto-install-all)
       ;; configure `auto-mode-alist' for tree-sitter modes relying on
       ;; `fundamental-mode'
       (treesit-auto-add-to-auto-mode-alist))

@@ -19,13 +19,10 @@
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 
 (customize-set-variable 'package-archive-priorities
-                        '(("gnu"    . 99)   ; prefer GNU packages
-                          ("nongnu" . 80)   ; use non-gnu packages if
-                                            ; not found in GNU elpa
-                          ("stable" . 70)   ; prefer "released" versions
-                                            ; from melpa
-                          ("melpa"  . 0)))  ; if all else fails, get it
-                                            ; from melpa
+                        '(("melpa" . 4)
+                          ("stable" . 3)
+                          ("nongnu" . 2)
+                          ("gnu" . 1)))
 
 ;;; refresh package archive contents
 (require 'time-date)
