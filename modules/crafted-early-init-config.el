@@ -27,11 +27,10 @@
 ;;                           ("melpa"  . 0)))
                                         ; if all else fails, get it
                                         ; from melpa
-(customize-set-variable 'package-archive-priorities
-                        '(("melpa" . 4)
-                          ("stable" . 3)
-                          ("nongnu" . 2)
-                          ("gnu" . 1)))
+(setq package-archive-priorities '(("melpa" . 4)
+                                   ("stable" . 3)
+                                   ("nongnu" . 2)
+                                   ("gnu" . 1)))
 
 ;;; refresh package archive contents
 (require 'time-date)

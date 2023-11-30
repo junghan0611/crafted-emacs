@@ -192,7 +192,7 @@ also enables undo functionality if the window layout changes."
 ;; Make scrolling less stuttered
 (setq auto-window-vscroll nil)
 (customize-set-variable 'fast-but-imprecise-scrolling t)
-(customize-set-variable 'scroll-conservatively 101)
+;; (customize-set-variable 'scroll-conservatively 101)
 (customize-set-variable 'scroll-margin 0)
 (customize-set-variable 'scroll-preserve-screen-position t)
 
